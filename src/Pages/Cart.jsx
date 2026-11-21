@@ -1,5 +1,5 @@
 import React from 'react'
-import EmptyCart from "../assets/empty_cart.svg"
+
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 const Cart = ({ cart, changeQuantity, removeItem }) => {
@@ -61,7 +61,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                                 })
                             }
                         </div>
-                        {cart.length == 0 && (
+                        {cart.length === 0 && (
                             <div className="cart__empty">
                                 <img src=/*{EmptyCart}*/ "https://media.tenor.com/nEP6ovplEd8AAAAi/so-really.gif"
                                     alt="" className="cart__empty--img" />
